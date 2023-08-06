@@ -1,20 +1,39 @@
-# Project-Name
-Project Description
+# Snake Game
+Snake Pygame is a 2D arcade game built using the Python programming language and Pygame, a set of Python modules designed for writing video games. The goal of the game is to guide a 'snake' towards food items that appear randomly in the game area. With each piece of food consumed, the snake increases in length. The game becomes progressively difficult as the snake grows longer, as the player must avoid colliding with the snake's own body. The player also needs to prevent the snake from touching the boundaries of the game area. The game utilizes simple yet engaging graphics and controls, providing a nostalgic and enjoyable gaming experience.
 
 # Team Members
-1) Member 1    ->  Github ID
-1) Member 2    ->  Github ID
+1) Aiswarya Menon K    ->  Aiswarya-Menon
+1) Abheda K P          ->  Abheda-kp
 
-# Team Name - 
+# Team Name - Slytherin
 
 # Link To Video - 
 
 # How the tool works
-Describe the logic behind the working of the tool
+Initialization: The program initializes the Pygame mixer and Pygame itself. It sets up some color constants, loads in some image files to use as backgrounds, creates a game window with Pygame, sets the title of the game window, and sets up the background music to play in a loop.
+
+Variables: The program defines some variables like clock and font. These will be used for timing and rendering text in the game, respectively.
+
+Functions:
+
+text_screen: It is used to draw text on the screen at a specific location.
+plot_snake: It is used to draw the snake in the game window. The snake is a collection of rectangles, where each rectangle is a segment of the snake's body.
+welcome: This function sets up the welcome screen that waits for the player to press the return key to start the game.
+gameloop: This function contains the main game loop, where all the magic happens. It processes events (like player input), updates the game state, and renders the new game state on the screen.
+Game Logic:
+
+At the beginning of the game, the snake starts with a length of one at a predefined location. The game also randomly places food somewhere in the game area.
+If the snake eats the food (i.e., the snake's head position coincides with the food's position), then the score increases by 10, a new food item is placed randomly within the game area, and the snake's length increases.
+The player can control the direction of the snake's movement. The snake continuously moves in the last chosen direction. If the snake's head hits its body or it goes out of bounds, it's game over.
+The score and high score are displayed in the game window during gameplay. If the current score exceeds the high score, the high score is updated.
+When the game is over, the score is saved as the high score if it's greater than the previous high score, and a game-over screen is displayed. The player can start a new game by pressing the return key.
+Execution: The game starts by calling the welcome function, which then enters into the gameloop function as soon as the player presses the return key, starting the actual game.
 
 # Libraries Used
-1) Library 1
-2) Library 2
+1) pygame
+2) random
+3) os
 
 # How to configure and Run
+To run this program download the files and run it in any possible environment like vscode or any other text editor . Make sure that Python is installed and the required modules are also present.
 
