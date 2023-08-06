@@ -35,5 +35,14 @@ Execution: The game starts by calling the welcome function, which then enters in
 3) os
 
 # How to configure and Run
-To run this program download the files and run it in any possible environment like vscode or any other text editor . Make sure that Python is installed and the required modules are also present.
+First, install the latest version of Python on your computer. You can download it from the official Python website.
 
+Next, install the pip package manager. This will allow you to easily install and manage Python packages.
+
+Install the virtualenv package. This will allow you to create isolated Python environments, which can help prevent conflicts between different projects.
+
+Install the Pygame library. This can be done using pip by running the command "pip install pygame" in your command prompt.
+
+Once Pygame is installed, you can test if it's working by creating a new Python file and importing Pygame. If you don't get any errors, then it's installed correctly.
+
+Create a new Python project in your preferred IDE or text editor. It is recommended to use something like PyCharm or Atom.
